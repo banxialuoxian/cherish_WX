@@ -1,0 +1,7 @@
+<view class="btn-area">
+  <input class="input-top" placeholder="请输入要查找的收纳" type="text" confirm-type="search" auto-focus bindinput="storageInput" />
+  <image src="../../images/搜索.png" class="input-image" bindtap='seachStorageByName'> </image>
+</view>
+<view class="storage-location">
+  {{storageInformation_space_name}}
+</view>
