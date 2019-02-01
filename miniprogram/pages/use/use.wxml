@@ -1,0 +1,4 @@
+<image src="../../images/use_title.png"  class = "top-image" mode="aspectFit">  
+</image>
+<image src="../../images/添加使用1.png"  class = "add-use-image" mode="aspectFit" bindtap='goToUseAdd'>  
+</image>

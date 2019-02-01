@@ -1,3 +1,0 @@
-<!--pages/select/select.wxml-->
-<view class ="tel" bindtap='tel'>打电话给庭庭
-</view>

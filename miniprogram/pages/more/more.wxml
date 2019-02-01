@@ -1,0 +1,9 @@
+<image class="image1" src='../../images/猪.png' mode="widthFix" bindtap='telmengTing'> </image>
+<view class ="tel" bindtap='telmengTing'>打电话给小公主
+</view>
+<image class="image1" src='../../images/龙.png' mode="widthFix" bindtap='telbaBa'> </image>
+<view class ="tel" bindtap='telbaBa'>打电话给太上皇
+</view>
+<image class="image1" src='../../images/猴.png' mode="widthFix" bindtap='telmaMa'> </image>
+<view class ="tel" bindtap='telmaMa'>打电话给太后娘娘
+</view>

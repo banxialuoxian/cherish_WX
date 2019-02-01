@@ -1,0 +1,29 @@
+.spaceBlock text {
+  position:relative;
+margin-top:3px;
+float:left;
+margin-left:69px;
+
+
+}
+.spaceBlock {
+  width: 42%;
+  height: 90px;
+  line-height: 50rpx;
+  float: left;
+  /* background: #fdfdfdf8; */
+  text-align: center;
+  margin: 115rpx 0 0 40rpx;
+  font-size: 16px;
+  border-radius: 10px;
+  color: #484848;
+  /* padding: 14px 0 0 0; */
+}
+
+.spaceBlock image {
+width:40px;
+height:40px;
+float:left;
+margin-top:6px;
+margin-left:66px;
+}

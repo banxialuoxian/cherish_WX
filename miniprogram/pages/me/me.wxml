@@ -1,0 +1,32 @@
+<view style='margin-top:60px;margin-bottom:10px;'>
+  <image class="userinfo" src='{{userInfo.avatarUrl}}'></image>
+  <text class="nickname">{{userInfo.nickName}}</text>
+</view>
+<view class="line_01"></view>
+<view bindtap="submit">
+  <image class="voc-image" src='../../images/问题反馈.png'></image>
+  <text class="voc">问题反馈</text>
+  <image class="more-place" src='../../images/更多存放地.png'></image>
+</view>
+<view class="line_02"></view>
+<view bindtap="submit">
+  <image class="tel-image" src='../../images/联系我们.png'></image>
+  <text class="tel">请联系我</text>
+  <image class="more-place" src='../../images/更多存放地.png'></image>
+</view>
+<view class="line_03"></view>
+<view bindtap="submit">
+  <image class="setting-image" src='../../images/设置.png'></image>
+  <text class="setting">设置</text>
+  <image class="more-place" src='../../images/更多存放地.png'></image>
+</view>
+<view class="line_04"></view>
+
+
+<view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+ 
+<view class="modalDlg" wx:if="{{showModal}}">
+    <image  mode="aspectFill" src="../../images/待开发.jpg"/>
+    <text style='font-size:16px;margin-top:13px;'>功能还在开发啦~</text>
+    <button class="confirm"bindtap="go">好呢</button>
+</view>

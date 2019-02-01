@@ -1,0 +1,93 @@
+.input-top {
+  background: #f8f8f8;
+  width: 58%;
+  border-radius: 15px;
+  margin-left: 16px;
+  padding: 3px 16px 3px 20px;
+  font-size: 15px;
+  display: inline-block;
+}
+
+.input-image {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  padding: 0px 16px 0px 20px;
+}
+
+.empty-image {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  right: 31px;
+  top: 6px;
+  z-index: 9999;
+}
+
+.quick-select {
+  font-size: 14px;
+  margin-left: 23px;
+  margin-top: 18px;
+  color: #999;
+}
+
+/* pages/select/select.wxss */
+
+.spaceBlock text {
+  position: relative;
+  float: center;
+  font-size: 18px;
+  margin: 10px 20px 40px;
+  padding: 0px 15px;
+  font-display: left;
+  color: #707070;
+}
+
+.spaceBlock {
+  width: 46%;
+  /* height:58px; */
+  line-height: 50rpx;
+  float: left;
+  background: #fdfdfdf8;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 10px;
+  color: #484848;
+}
+
+.spaceBlock image {
+  width: 100%;
+  float: left;
+}
+
+.btnImg {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 35px;
+}
+
+.btn2 {
+  background-color: white;
+  color: #999;
+  border-radius: 30px;
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 32rpx;
+}
+
+.btn2::after {
+  border: 0;
+}
+
+.btn3 {
+  margin-top: 170rpx;
+  background-color: white;
+  color: #999;
+  border-radius: 0rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,31 @@
+/* pages/select/select.wxss */
+
+.spaceBlock text {
+position:relative;
+float:center;
+font-size:18px;
+margin:10px 20px 40px;
+padding:0px 15px;
+font-display:left;
+color:#707070;
+
+
+
+}
+
+.spaceBlock {
+  width: 46%;
+  /* height:58px; */
+  line-height: 50rpx;
+  float: left;
+  background: #fdfdfdf8;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 10px;
+  color: #484848;
+}
+
+.spaceBlock image {
+  width: 100%;
+  float: left;
+}

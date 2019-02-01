@@ -1,0 +1,6 @@
+<view style='margin-left:17px'>
+<view  wx:for="{{spaceBlock}}" class='spaceBlock'style="margin-left:15px">
+<image  wx:key="gg" wx:for-item="item" class="{{space_id_now==item._id?'active':''}}" data-id="{{item._id}}" data-image="{{item.image}}" data-space_name="{{item.space_name}}" bindtap="goToBlock" src='../../images/spaceImage/{{item.image}}.png'></image>
+  <text wx:key="gg" wx:for-item="item" class="{{space_id_now==item._id?'active':''}}" data-id="{{item._id}}" data-image="{{item.image}}" data-space_name="{{item.space_name}}" bindtap="goToBlock">{{item.space_name}}</text>
+</view>
+</view>

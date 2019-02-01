@@ -1,0 +1,41 @@
+<view>
+  <view style='height:150px'>
+    <input class="input-storage-name" placeholder="请添加物品名称" type="text" confirm-type="search" auto-focus:false bindinput="storageNameInput" />
+  </view>
+  <image class='tempFile' wx:if="{{imgUrl}}" src="{{imgUrl}}" mode="aspectFit" bindtap="previewImg"></image>
+  <image class='btnImg' bindtap="doUpload" src='../../images/添加图片.png'></image>
+  <view class="line_01"></view>
+  <view bindtap="showStoragePlace">
+    <image class='save-image' src='../../images/存储箱.png'></image>
+    <text class='save-botton'> 存储地</text>
+    <text class='space-selected'> {{space_name}}</text>
+    <image class="more-place" src='../../images/更多存放地.png'></image>
+    <view class="line_02"></view>
+  </view>
+  <view bindtap="showSpaceBlock">
+    <image class='save-image' src='../../images/标签.png'></image>
+    <text class='save-botton'> 标签</text>
+  </view>
+  <!--屏幕背景变暗的背景  -->
+  <view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+  <!--弹出框  -->
+  <view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+    <image class='cancle-image' bindtap="hideModalCancle" src='../../images/取消.png'></image>
+    <image class='confirm-image' bindtap="hideModalConfirm" src='../../images/确定.png'></image>
+    <view style='text-align:center'>
+      <text class="gg-title">存储地</text>
+      <view class='gg' style="margin-left:15px">
+        <text wx:for="{{spaceBlock}}" wx:key="gg" wx:for-item="item" class="{{space_id_now==item._id?'active':''}}" data-id="{{item._id}}" data-space_name="{{item.space_name}}" bindtap="filter">{{item.space_name}}</text>
+        <input wx:if="{{addSpaceStatus}}" class="add-space-block" placeholder=" " type="text" confirm-type="done" auto-focus:false bindinput="getInputStoragePlace" />
+        <image wx:if="{{addSpaceStatus}}" class="confirm-space-block" bindtap="addStoragePlace" src='../../images/确认添加存储地.png'></image>
+        <image wx:if="{{addSpaceStatus}}" class="cancle-space-block" bindtap="cancleStoragePlace" src='../../images/取消添加存储地.png'></image>
+        <image wx:if="{{addSpaceStatus==false}}" class="add-space-block" bindtap="changeAddSpaceStatus" src='../../images/添加 无边框.png'></image>
+      </view>
+    </view>
+  </view>
+
+  <view class='label-choose' style="margin-left:58px;margin-top:43px;">
+    <text wx:for="{{labelBlock}}" wx:key="gg" wx:for-item="item" class="{{label_id==item.label_id?'active':''}}" data-label_id="{{item.label_id}}" data-label_name="{{item.label_name}}" bindtap="labelSelect">{{item.label_name}}</text>
+    </view>
+    <button class="submit-button" bindtap='submit'>添加</button>
+  </view>

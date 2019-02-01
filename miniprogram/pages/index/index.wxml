@@ -1,0 +1,20 @@
+<image src="../../images/home.jpg"  class = "top-image" mode="widthFix">  
+</image>
+
+<view>
+  <button class='btn1' bindtap="goToFind" open-type="switchTab">
+    <image class='btnImg' src='../../images/收纳.png'></image>
+    <view>收纳整理</view>
+  </button>
+  <button class='btn2' bindtap="goToUse" open-type="switchTab">
+    <image class='btnImg' src='../../images/使用帮助.png'></image>
+    <view>使用方法</view>
+  </button>
+  <button class='btn2' bindtap="goToFind" open-type="switchTab">
+    <image class='btnImg' src='../../images/心情记录.png'></image>
+    <view>心情记录</view>
+  </button>
+    <button class='btn3' bindtap="goToStorageDetail" open-type="switchTab">
+    <image class='btnImg3' src='../../images/添加.png'></image>
+  </button>
+</view>
